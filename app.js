@@ -25,5 +25,6 @@ var
     });
 
 
-    app.listen(port);
-    console.log('goin down on port 3000');
+    app.listen(port, function() {
+        console.log('Our app is running on http://localhost:' + port);
+    });
