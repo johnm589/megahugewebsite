@@ -1,8 +1,6 @@
 var
 
     express = require ("express"),
-    dateTime = new Date,
-    utcDate= dateTime.toUTCString(),
     port = process.env.PORT || 3000;
     app = express();
 
@@ -27,5 +25,5 @@ var
     });
 
 
-    app.listen(3000);
+    app.listen(port);
     console.log('goin down on port 3000');
